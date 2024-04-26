@@ -1,11 +1,74 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
 }
 body {
     background-image: url(Images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
+}
+.container {
+    padding: 10px 10%;
 
+}
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+ 
+}
+#log {
+    font-family: 'Pacifico', cursive; 
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #E3FEF7; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    line-height: 1.2;
+    display: inline-block;
+    position: relative;
+   
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    position: relative;
+  
+}
+/* adding the after psuedo element on the 
+element of lists */
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #E3FEF7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span {
+    color: #E3FEF7;
 }
