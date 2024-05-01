@@ -12,7 +12,7 @@
         <div class="container">     
             <nav>
                 <!-- logo -->
-                <span id="logo">Yafet</span>
+                <span id="logo">Portfolio</span>
                 
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -24,13 +24,13 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <div >
+                <div>
                     <p>Front-End Developer</p>
-                    <h1>Hi, I'm <span>Yafet</span> </h1>
+                    <h1>Hi, I'm <span> Yafet</span> </h1>
+
                 </div>
-                
-                <img src="Images/sideimg.png" alt="" id="helo" width="50%">
-                
+                <img src="Images/pro.png" alt="" id="helo" width="40%">
+                    
             </div>
         </div>
 
@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-
+             
             </div>
             
             <div class="about-col-2">
@@ -49,9 +49,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel voluptates ducimus harum nostrum eum qui, aspernatur dolorem, consectetur, molestias quidem. Eius repudiandae magni maxime? Quaerat iusto error asperiores alias.
                 </p>
                 <div class="tab-titles ">
-                    <p class="tab-links active-link">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                  
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
 
                 </div>
                 <div class="tab-contents active-tab" id="skills">
@@ -77,6 +77,22 @@
     </div>
 </div>
 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    </script>
     
 </body>
 </html>
