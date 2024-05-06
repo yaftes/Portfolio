@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/38696a0eab.js" crossorigin="anonymous"></script>
+    <script src="new.js"></script>
 </head>
 <body>
     <div class="header">
@@ -15,11 +16,11 @@
                 <span id="logo">Portfolio</span>
                 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="active" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="#" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+                    <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
                     
                 </ul>
             </nav>
@@ -33,9 +34,9 @@
                     
             </div>
         </div>
+ </div>
 
 
-    </div>
 <div id="about">
     <div class="container">
         <div class="row">
@@ -76,23 +77,97 @@
         </div>
     </div>
 </div>
+<!-- services -->
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam, quod vel doloribus voluptate eaque molestias ad dolorem optio ea pariatur, ipsa cum officia. Saepe suscipit repellat libero possimus nostrum.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam, quod vel doloribus voluptate eaque molestias ad dolorem optio ea pariatur, ipsa cum officia. Saepe suscipit repellat libero possimus nostrum.</p>
+                    <a href="">Learn More</a>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-    }
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam, quod vel doloribus voluptate eaque molestias ad dolorem optio ea pariatur, ipsa cum officia. Saepe suscipit repellat libero possimus nostrum.</p>
+                    <a href="">Learn More</a>
 
-    </script>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------- portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/w1.png" alt="">
+                <div class="layer">
+                    <h3>Todo List</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/w3.png" alt="">
+                <div class="layer">
+                    <h3>Todo List</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/w3.png" alt="">
+                <div class="layer">
+                    <h3>Todo List</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------ contact ------  -->
+<div id="contact">
+    <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div><i class="fa-solid fa-envelope"></i><span>yafetesfaye11@gmail.com</span><br></div>
+                <div><i class="fa-solid fa-phone"></i><span>+251921806854</span></div>
+                <div class="social-icons">
+                    <a href="https://github.com/yaftes"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yafet-tesfaye-41b45627a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>                    
+                </div>
+                <a href="Images/mycv.pdf" download class="btn">Download CV</a>
+            </div>
+            
+    </div>
     
+</div>
+<div class="copyright">
+    <p>Copyright Yafet.<i class="fa-solid fa-heart"></i> Made by Me </p>
+</div>
+
 </body>
 </html>
