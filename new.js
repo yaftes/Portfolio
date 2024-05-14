@@ -12,6 +12,9 @@ function scrollToSection(sectionId) {
     var clickedLink = document.querySelector('nav a[href="#' + sectionId + '"]');
     clickedLink.classList.add('active');
 }
+
+
+
 var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
