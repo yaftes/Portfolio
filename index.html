@@ -3,171 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/38696a0eab.js" crossorigin="anonymous"></script>
-    <script src="new.js"></script>
+    <title>Section Pointer Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
-    <div class="header">
-        <div class="container">     
-            <nav>
-                <!-- logo -->
-                <span id="logo">Portfolio</span>
-                
-                <ul>
-                    <li><a href="#" class="active" onclick="scrollToSection('home')">Home</a></li>
-                    <li><a href="#" onclick="scrollToSection('about')">About</a></li>
-                    <li><a href="#" onclick="scrollToSection('services')">Services</a></li>
-                    <li><a href="#" onclick="scrollToSection('portfolio')">Portfolio</a></li>
-                    <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
-                    
-                </ul>
-            </nav>
-            <div class="header-text">
-                <div>
-                    <p>Front-End Developer</p>
-                    <h1>Hi, I'm <span> Yafet</span> </h1>
-
-                </div>
-                <img src="Images/pro.png" alt="" id="helo" width="40%">
-                    
-            </div>
-        </div>
- </div>
-
-<!-- -------- About -------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-left">
-             <img src="Images/about.jpg" alt="" width="300px" height="400px">
-            </div>
-            
-            <div class="about-right">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel voluptates ducimus harum nostrum eum qui, aspernatur dolorem, consectetur, molestias quidem. Eius repudiandae magni maxime? Quaerat iusto error asperiores alias.
-                </p>
-                <div class="tab-titles ">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                 
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/ios Apps</li>
-
-                    </ul>
-                </div>
-            
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>3rd Year</span><br>SW Student</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/ios Apps</li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- services -->
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
+    <nav>
+        <span>Logo</span>
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Services</a></li>
+            <li><a href="#section3">About</a></li>
+            <li><a href="#section4">Portfolio</a></li>
+            <li><a href="#section5">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="section1">
             <div>
+                <h2>Simple and Elegant</h2>
+                <div>Yafet</div>
+                <h1 id="changingText">FRONT-END DEVELOPER</h1>
+                <p>Lorem ipsum dolor sit amet Vitae </p>
+                <button>Get Started</button>
+            </div>
+        </section>
+        <section id="section2">
+            <h1>WHAT I DO</h1>
+            <div class="container">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam, quod vel doloribus voluptate eaque molestias ad dolorem optio ea pariatur, ipsa cum officia. Saepe suscipit repellat libero possimus nostrum.</p>
-                    <a href="">Learn More</a>
+                    <i class="fa-solid fa-laptop"></i>
+                    <div>
+                        <h2>Responsive Mobile</h2>
+                        
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam, quod vel doloribus voluptate eaque molestias ad dolorem optio ea pariatur, ipsa cum officia. Saepe suscipit repellat libero possimus nostrum.</p>
-                    <a href="">Learn More</a>
 
-                </div>
-                
             </div>
-            <div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam, quod vel doloribus voluptate eaque molestias ad dolorem optio ea pariatur, ipsa cum officia. Saepe suscipit repellat libero possimus nostrum.</p>
-                    <a href="">Learn More</a>
+        </section>
+        <section id="section3">
+            <div class="container2">
+               <div class="col-1">
+                <h1>ABOUT YAFET</h1>
+                <h2>DESIGNER & DEVELOPER</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nobis ea totam tempora sit tempore accusamus doloremque, odit aliquam repellendus exercitationem reprehenderit eligendi asperiores. Deserunt est vitae nam ullam quos.</P>
+               </div>
+               <div class="col-2">
+                  <div class="box one">
+                    <p>Web Desing</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="box two">
+                    <p>Mobile Apps</p>
+                    <p>80%</p>
+                  </div>
+                  <div class="box three">
+                    <p>SEO Stuffs</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="box four">
+                    <p>HTML5 & CSS3</p>
+                    <p>90%</p>
+                  </div>
+               </div>
 
-                </div>
-                
             </div>
-
-        </div>
+        </section>
+        <section id="section4">Section 4</section>
+        <section id="section5">Section 5</section>
     </div>
-</div>
-
-
-<!-- ---------- portfolio---------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/w1.png" alt="">
-                <div class="layer">
-                    <h3>Todo List</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/w3.png" alt="">
-                <div class="layer">
-                    <h3>Todo List</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/w3.png" alt="">
-                <div class="layer">
-                    <h3>Todo List</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                </div>
-            </div>
-        </div>
+    <div class="section-pointer">
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+        <div class="dot" id="dot5"></div>
     </div>
-</div>
-
-<!-- ------ contact ------  -->
-<div id="contact">
-    <div class="container">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <div><i class="fa-solid fa-envelope"></i><span>yafetesfaye11@gmail.com</span><br></div>
-                <div><i class="fa-solid fa-phone"></i><span>+251921806854</span></div>
-                <div class="social-icons">
-                    <a href="https://github.com/yaftes"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/yafet-tesfaye-41b45627a/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-telegram"></i></a>                    
-                </div>
-                <a href="Images/mycv.pdf" download class="btn">Download CV</a>
-            </div>
-            
-    </div>
-    
-</div>
-<div class="copyright">
-    <p>Copyright Yafet.<i class="fa-solid fa-heart"></i> Made by Me </p>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
