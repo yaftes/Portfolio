@@ -51,7 +51,7 @@ nav {
     padding: 10px 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     padding:20px 15px;
 }
 
@@ -92,25 +92,26 @@ nav ul li a:hover::after {
 }
 
 
-.content {
-     /* Add padding to avoid content being hidden under fixed nav */
-}
+
 
 
 /******* first section *******/
 #section1 {
-    background-image: url(images/bg.jpg);
+    background-image: url(images/bg4.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     
-
 }
 #section1 div{
     text-align: center;
 }
 #section1 div h2 {
-    margin-top: 150px;
+    margin-top: 120px;
+    font-size: 35px;
+}
+#section1 div h2::first-letter {
+    color: rgb(193, 72, 72);
 }
 #changingText {
     transition: opacity 0.5s ease-in-out;
@@ -149,22 +150,66 @@ nav ul li a:hover::after {
 
 
 /****** section 2 ********/
+#section2 {
+    padding: 35px 10px 50px;
+    background-color: #121212;
+}
+#section2 h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#section2 .container {
+    display: flex;
+}
+#section2 .comp {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-basis: 33.3%;
+}
+.icons {
+    max-width: 70px;
+    max-height: 70px;
+    border: 3px solid white;
+    margin-left: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(193, 72, 72);
+    min-width: 70px;
+    min-height: 70px;
+   
+}
+
+#section2 .icons:hover {
+    background-color: white;
+    transition: 0.5s;
+}
 
 
 
 
 
 /******* section 3 *********/
+#section3 {
+    padding: 70px 20px;
+}
 .container2 {
 
     display: flex;
     gap: 15px;
     max-width: 95%;
 }
+.container2 h1 {
+    font-size: 35px;
+}
 .container2 h2 {
     color: rgb(193, 72, 72);
 }
 .container2 p {
+    font-size: 18px;
     color: rgb(205, 199, 191);
 }
 .container2 .col-1 {
@@ -204,3 +249,75 @@ nav ul li a:hover::after {
     background-image: linear-gradient(to right, rgb(193, 72, 72)90%, white 10%);
 }
 
+
+
+/* ************* section4 ********* */
+#section4 h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.img-container .row {
+    display: flex;
+    gap: 15px;
+}
+.row .col {
+    flex-basis: 33%;
+}
+.row .col img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+/********** section5 **************/
+
+#section5 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    align-content: center;
+    margin: 10px 0px;
+   
+}
+#section5 h1 {
+    font-size: 30px;
+}
+.col i {
+    color: rgb(193, 72, 72);
+    font-size: 24px;
+}
+.col p {
+    margin: 0 15px;
+    font-size: 18px;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(193, 72, 72);
+    border-radius: 10px;
+}
+.ico {
+    margin: 20px 0px;
+}
+.ico i {
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+i {
+    font-size: 30px;
+    color: rgb(193, 72, 72);
+
+}
+.ico i:hover {
+    transition: 0.5s;
+    color: rgb(193, 72, 72);
+}
