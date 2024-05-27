@@ -105,6 +105,7 @@ nav ul li a:hover::after {
 }
 #section1 div{
     text-align: center;
+    margin-bottom: 20px;
 }
 #section1 div h2 {
     margin-top: 120px;
@@ -133,7 +134,8 @@ nav ul li a:hover::after {
 #section1 div h1 {
     font-size: 40px;
 }
-#section1 div button {
+#section1 div a {
+    text-decoration: none;
     color: white;
     padding: 15px 25px;
     background: transparent;
@@ -141,8 +143,9 @@ nav ul li a:hover::after {
     border-radius: 5px;
     font-weight: bold;
     font-size: 16px;
+    margin-bottom: 20px;
 }
-#section1 div button:hover {
+#section1 div a:hover {
     background-color:rgb(193, 72, 72) ;
     border-color: rgb(193, 72, 72);
     transition: 0.5s;
@@ -151,7 +154,7 @@ nav ul li a:hover::after {
 
 /****** section 2 ********/
 #section2 {
-    padding: 35px 10px 50px;
+    padding: 35px 20px 50px;
     background-color: #121212;
 }
 #section2 h1 {
@@ -165,7 +168,7 @@ nav ul li a:hover::after {
 #section2 .comp {
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 30px;
     flex-basis: 33.3%;
 }
 .icons {
@@ -197,7 +200,7 @@ nav ul li a:hover::after {
     padding: 70px 20px;
 }
 .container2 {
-
+    margin-left: 20px;
     display: flex;
     gap: 15px;
     max-width: 95%;
@@ -252,16 +255,20 @@ nav ul li a:hover::after {
 
 
 /* ************* section4 ********* */
+#section4 div{
+    margin-bottom: 0;
+}
 #section4 h1 {
     text-align: center;
     font-size: 30px;
 }
 .img-container .row {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 .row .col {
     flex-basis: 33%;
+    margin-top: 15px;
 }
 .row .col img {
     width: 100%;
@@ -269,7 +276,10 @@ nav ul li a:hover::after {
     border-radius: 5px;
 }
 /********** section5 **************/
-
+#section5 {
+    background-color: #121212;
+    margin-bottom: 0;
+}
 #section5 .container {
     display: flex;
     flex-direction: column;
@@ -280,11 +290,11 @@ nav ul li a:hover::after {
 .col {
     display: flex;
     align-content: center;
-    margin: 10px 0px;
+    margin: 0 0px;
    
 }
 #section5 h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 .col i {
     color: rgb(193, 72, 72);
@@ -297,9 +307,14 @@ nav ul li a:hover::after {
 .btn {
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: rgb(193, 72, 72);
     border-radius: 10px;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(193, 72, 72);
+    transition: 0.5s;
 }
 .ico {
     margin: 20px 0px;
@@ -313,11 +328,47 @@ nav ul li a:hover::after {
     position: relative;
 }
 i {
-    font-size: 30px;
+    font-size: 35px;
     color: rgb(193, 72, 72);
 
 }
 .ico i:hover {
     transition: 0.5s;
     color: rgb(193, 72, 72);
+}
+
+@media (max-width: 1080px) {
+    #section2 .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #section2 .comp {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 80%;
+        margin-left: 20px;
+    }
+    .container2 {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 95%;
+    }
+    .img-container .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .row .col {
+        margin-top: 15px;
+    }
+    .row .col img {
+        width: 70%;
+        height: 350px;
+        border-radius: 5px;
+        margin: auto;
+    }
 }
